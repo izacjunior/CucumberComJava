@@ -18,3 +18,19 @@ Funcionalidade: Alugar Filme
 		Quando alugar
 		Entao nao sera possivel por falta de estoque
 		E o estoque do filme sera 0 unidade
+		
+		Esquema do Cenario: Deve dar condicoes tipo de aluguel
+		Dado um filme com estoque de 2 unidades
+		E que o preco do aluguel seja R$ <preco>
+		E que o tipo do aluguel seja <tipo>
+		Quando alugar
+		Entao o preco do aluguel sera R$ <valor>
+		E a data de entrega sera em <qtdDias> dias
+		E a pontuacao sera de <pontuacao> pontos
+		
+		Exemplos:
+		|preco| 	tipo   | valor| qtDias| pontuacao|
+		| 4 	|entrendido|	8		|	3			|		2			 |
+		| 3 	|comum		 |	5		|	3			|		2			 |
+		| 5 	|entrendido|	4		|	3			|		2			 |
+		
